@@ -1,0 +1,97 @@
+.wrapper{
+    width: 1000px;
+}
+
+.header img, .header h1{
+display: inline-block;
+}
+
+.header img{
+    width: 100px;
+    height: 100px;
+}
+
+.header h1{
+    margin-bottom: 0px;
+    color: grey;
+}
+
+.header h2{
+    background-color: lightblue;
+    color: white;
+    padding: 10px;
+}
+.sidebar{
+    width: 200px;
+    display: inline-block;
+
+}
+.sidebar h4, .sidebar p, .sidebar button, .maincontent img, .maincontent p{
+    display: inline-block;
+}
+
+mark.red{
+    color: red;
+    background: none;
+}
+
+.sideimg{
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    border-top: 2px solid black;
+}
+    /* width: 200px;
+} */
+.sidebar button{
+    width: 200px;
+    height: 30px;
+    color: white;
+}
+
+.blue{
+    background-color: #393988;
+}
+.orange{
+    background-color: #DD9416;
+    margin-top: 4px;
+}
+.image1{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 250px;
+    margin-top: 20px;
+}
+
+.image2{
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    width: 80px;
+}
+
+.imagetext{
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    color: white;
+}
+
+.maincontent, .maincontent img, .maincontent p{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.maincontent img{
+    width: 30px;
+    height 20px;
+}
+
+.left{
+    
+}
+

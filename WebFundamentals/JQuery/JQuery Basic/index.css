@@ -1,0 +1,19 @@
+h1,p{
+    text-align: center;
+    width: 700px;
+}
+p{
+    margin-bottom: 50px;
+}
+.red_p, .slide_p{
+    border-bottom: 2px solid black;
+}
+.slide_img{
+width: 80px;
+height: 90px;
+}
+.red_hover {
+    color: red;
+  }
+
+ 

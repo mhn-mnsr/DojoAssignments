@@ -1,0 +1,32 @@
+.container{
+    width: 500px;
+}
+.contactcard{
+    width: 285px;
+}
+input, label, .btn{
+    margin: 10px;
+}
+.description{
+    width: 260px;
+    height: 100px;
+}
+
+.Right_side{
+    text-align: right;
+    vertical-align: top;
+    /* margin-left: 500px; */
+    /* display: block; */
+}
+
+.Contacts{
+    border: 2px solid red;
+    background-color: yellow;
+}
+/* table, tr, td{
+    width: 150px;
+    /* border: 2px solid bl; */
+
+/* table{
+    border: 2px solid black;
+} */ 

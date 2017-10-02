@@ -1,0 +1,13 @@
+#wrapper{
+    width: 1000px;
+}
+.Pokedex{
+    display: inline-block;
+}
+
+.Pokemon_box{
+    display: inline-block;
+}
+.Pokedex, .Pokemon_box{
+    display: inline-block;
+}
