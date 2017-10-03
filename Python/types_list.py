@@ -4,7 +4,7 @@ count_str = 0
 make_string = "String:"
 sum = 0
 
-l = ['magical unicorns',19,'hello',98.98,'world']
+l = ['magical unicorns',19,'hello',98,'world']
 
 for x in l:
     if(type(x)==int):
@@ -12,7 +12,7 @@ for x in l:
         sum += x
     if(type(x)==str):
         count_str += 1
-        make_string = "made string:" + l[0] + ''
+        make_string = "made string:", l[x], ''
 
 if(count_int == 0):
     print "the list entered is string"
