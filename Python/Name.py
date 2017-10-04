@@ -6,7 +6,6 @@
 # ]
 # def players(data):
 #     for names in students:
-#         # val = students[x]
 #         print names['first_name'], names['last_name']
         
 # players(students)
