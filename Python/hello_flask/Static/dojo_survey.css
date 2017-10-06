@@ -1,0 +1,8 @@
+#container_form{
+    width: 1000px;
+}
+
+form{
+    display: inline-block;
+    margin-top: 100px;
+}
