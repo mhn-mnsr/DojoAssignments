@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='static/index.css') }}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                $('.Upper').hide().fadeIn(2000);  
+                if ($(".fade") === True);
+                    $(".fade"),fadeIn(3000)
+                    $(".append").fadeIn('h2')
+                    $(".wrong").fadeOut(300)
+            });
+    </script>
+    <title>Random Number Game</title>
+</head>
+<body>
+<div class="Upper">
+
+        <h1>Welcome to The Great Number Game!</h1>
+        
+
+            {% if session['answer_state'] == 'Low' %}
+            <p class="wrong">Your Number was {{session['user_guess']}}! That's a little low!</p>
+            {% endif %}
+
+            {% if session['answer_state'] == 'High' %}
+            <p class="wrong">Your Number was {{session['user_guess']}}! That's a little high!</p>
+            {% endif %}
+
+            {% if session['answer_state'] == 'Right' %}
+            <p class=".fade" True>The Number was</p>
+            <p class=".append" True><h3>{{session['correct_number']}}</h3> <h2>Hooray!</h2></p>
+            {% endif %}
+
+        <p class="wrong">The Number is.... </p>
+       
+        <p></p>
+</div>
+        
+    
+    <form class="form" method="post" action=/guess>
+        <input class="text" type="text" name="guess"> <br/>
+        <button type="submit">guess</button>
+    </form>
+   
+</div>
+  
+</body>
+</html>
