@@ -9,7 +9,7 @@
                 {% with messages = get_flashed_messages()%}
                     {% if messages %}
                         {% for message in messages %}
-                        <p>{{message}}</p>
+                        <p>{{ message }}</p>
                         {% endfor %}
                     {% endif %}
                 {% endwith %}
@@ -36,7 +36,7 @@
                     {% with messages = get_flashed_messages()%}
                         {% if messages %}
                             {% for message in messages %}
-                            <p>{{comment}}</p>
+                            <p>{{ comment }}</p>
                             {% endfor %}
                         {% endif %}
                     {% endwith %}
