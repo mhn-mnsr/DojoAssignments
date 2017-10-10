@@ -6,6 +6,13 @@
         </head>
         <body>
             <div id="container_form">
+                {% with messages = get_flashed_messages()%}
+                    {% if messages %}
+                        {% for message in messages %}
+                        <p>{{message}}</p>
+                        {% endfor %}
+                    {% endif %}
+                {% endwith %}
                 <form action='/process' method='post'>
                     Name: 
                     <input type="text" name="name">
@@ -26,6 +33,13 @@
                     <option value="Java">Jave</option>
                     </select>
                     <br></br>
+                    {% with messages = get_flashed_messages()%}
+                        {% if messages %}
+                            {% for message in messages %}
+                            <p>{{comment}}</p>
+                            {% endfor %}
+                        {% endif %}
+                    {% endwith %}
                     Comment (optional):<br></br>
                     <textarea rows="4" cols="50" name="comment">
                     </textarea>
