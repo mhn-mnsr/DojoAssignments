@@ -23,4 +23,4 @@ def create_friend():
     return redirect('/')
 
 
-app.run(debug=True)
+app.run(debug=True
