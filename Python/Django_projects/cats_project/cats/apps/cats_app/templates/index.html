@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>MADE IT TO INDEX</h1>
+    <a href="/create">Create some cats or humans</a>
+    <h2>HERE ARE THE CATS</h2>
+    {% for cat in cats %}
+        <h3>{{cat.name}}</h3>
+        <p>This cat is {{cat.age}} years old and owned by {{cat.owner.name}}</p>
+        <p>ITS FANS ARE</p>
+        {% for fan in cat.adoring_fans.all %}
+        <p>{{fan.name}}</p>
+        {% endfor %}
+    {% endfor %}
+    <h2>HERE ARE THE HUMANS</h2>
+    {% for human in humans %}
+    <h3>{{human.name}}</h3>
+    <p>This human is {{human.age}} years old</p>
+    {% endfor %}
+    <form action="/ryan_loves_cats" method="post">
+        {% csrf_token %}
+        <input type="submit" value="RYAN IS FAN OF ALL CATS">
+    </form>
+</body>
+</html>

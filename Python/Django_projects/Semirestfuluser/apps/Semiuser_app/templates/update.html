@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit User: {{user.id}}</h1>
+    {% if messages %}
+        {% for message in messages %}
+        <p{% if message.tags %} {% endif %}>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    <form action="/user/{{user.id}}/update" method="POST">
+        {% csrf_token %}
+        First name:<input type="text" name="firstname"value="{{ user.firstname }}">
+        Last name: <input type="text" name="lastname" value="{{ user.lastname }}">
+        Emai: <input type="email" name="email" value="{{ user.email }}">
+        <input type="submit" value="Update">
+        <a href="/user/{{ user.id }}">Show</a>
+        <a href="/">Go Back</a>
+    </form>
+</body>
+</html>

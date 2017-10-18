@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Users</h1>
+    <form action="/index" method="post">
+        {% csrf_token %}
+        <table>
+                <thead>
+                    <tr>
+                        <th>id</th>
+                        <th>Full Name</th>
+                        <th>Email</th>
+                        <th>Created At</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>{{ user.id }}</td>
+                        <td>{{ user.firstname }} {{ user.lastname }}</td>
+                        <td>{{ user.email }}</td>
+                        <td><a href="/user/{{ user.id }}">Show</a></td>
+                        <td><a href="/user/{{ user.id }}/edit">Edit</a></td>
+                        <td><a href="/user/{{ user.id }}/delete">Delete</a></td> 
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        <a href="/create">Add a new user</a>
+    </form>
+</body>
+</html>
