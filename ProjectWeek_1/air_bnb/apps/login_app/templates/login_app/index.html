@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'login_app/styles/index.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'login_app/styles/skeleton.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'login_app/styles/normalize.css' %}" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ 
+    <title>BIY </title>
+</head>
+
+<body>
+   
+          <img src="{% static 'login_app/images/background_image.jpg' %}" alt="My image" class="background_image"><!-- logo -->
+    <div class="Center_Wrap">
+
+
+        <img src="{% static 'login_app/images/logo.png' %}" alt="My image" class="Logo">    
+            
+        <p class="Slogan">Book It Yourself:
+            <BR> A community for musicians and fans dedicated supporting local DIY music scenes across the country. 
+        </p>
+            
+        <div class="Align">
+           
+              
+            <form class="Space" action="/registration" method="POST">
+                <h1>Register</h1>
+                {% csrf_token %}
+                First Name: <input type="text" name="first_name"><br />
+                Last Name: <input type="text" name="last_name"><br />
+                Birthday: <input type="date" name="birthday"><br />
+                Phone Number: <input type="tel" name="phone_number"><BR>
+                Email: <input type="email" name="email"><br />
+                Password: <input type="password" name="password"><br />
+                Confirm Password: <input type="password" name="confirmed_password"><br />
+                <input id="Submit" type="submit" value="Register  ">
+            </form>
+        </div>
+        <div class="Align">
+            <form class="Space" action="/login" method="POST">
+                  <h1>Login</h1>
+                {% csrf_token %}
+                Email: <input type="email" name="email"><br />
+                Password: <input type="password" name="password"><br />
+                <input type="submit" value="Log In">
+            </form>
+        </div>
+            {% if messages %}
+            <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+            </ul>
+
+            {% endif %}
+    </div>
+ 
+
+
+
+</body>
+</html>
