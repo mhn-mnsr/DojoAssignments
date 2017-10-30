@@ -2,6 +2,7 @@ from __future__ import unicode_literals
 
 from django.db import models
 import re
+from ..log_reg.models import User
 EMAIL_REGEX = re.compile(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]+$')
 # Create your models here.
 

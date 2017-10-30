@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Add a new user</h1>
+    <form action="{% url 'users_app:create_user' %}" method="post">
+        {% csrf_token %}
+        First name:<input type="text" name="first_name">
+        Last name: <input type="text" name="last_name">
+        Email: <input type="email" name="email">
+        <input type="submit" value="Create">
+        Password: <input type="password" name="password">
+    </form>
+</body>
+</html>

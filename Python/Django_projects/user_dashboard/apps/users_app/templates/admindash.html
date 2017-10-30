@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% if messages %}
+        {% for message in messages %}
+            <p>{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    <form action="{% url 'users_app:log_out' %}" method="post">
+        {% csrf_token %}
+        <input type="submit" value="Log Out">
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Full Name</th>
+                <th>Email</th>
+                <th>Created At</th>
+                <th>User Level</th>
+                <!-- {% if current_user.is_admin %} -->
+                <th>Actions</th>
+                <!-- {% else %}
+                {% endif %} -->
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.id }}</td>
+                    <td>{{ user.first_name }} {{ user.last_name }}</td>
+                    <td>{{ user.email }}</td>
+                    <td>{{ user.created_at }}</td>
+                    {% if user.is_admin %}
+                        <td>Admin</td>
+                    {% else %}
+                        <td>Normal</td>
+                    {% endif %}
+                    <!-- {% if current_user.is_admin %} -->
+                    <td><a href="/users/add/{{ user.id }}">Edit</a></td>
+                    <td><a href="/users/edit/{{ user.id }}">Edit</a></td>
+                    <td><a href="/users/delete/{{ user.id }}">Delete</a></td>
+                    <!-- {% else %}
+                    {% endif %} -->
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

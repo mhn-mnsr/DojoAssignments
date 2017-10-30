@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, {{ user.first_name }}</h1>
+    <a href="/logout">Log Out</a>
+        {% csrf_token %}
+        <table>
+            {% if friends %}
+                <h3>Here is the list of your friends:</h3>
+                    <tr>
+                        <th>Alias</th>
+                        <th>Action</th>
+                    </tr>
+                    {% for friend in friends %}
+                        <tr>
+                            <td>{{ friend.first_name }}</td>
+                            <td><a href="/user/{{ friend.id }}">View Profile</a></td>
+                            <td><a href="/deletefriend/{{ friend.id }}">Remove as friend</a></td> 
+                        </tr>
+                    {% endfor %}
+                </table>
+                {% else %}
+                <p>You dont have friends</p>
+            {%endif%}
+                {% if nonfriends %}
+                <h3>Other users not in your list:</h3>
+                <table>
+                    <tr>
+                        <th>Alias</th>
+                        <th>Action</th>
+                    </tr>
+                    {% for user in nonfriends %}
+                    <tr>
+                        <td><a href="/user/{{ user.id }}">{{user.first_name}}</a></td>
+                        <td><a href="/addfriend/{{ user.id }}">Add friend</a></td>
+                    </tr>
+                    {% endfor %}
+                </table>
+                {% endif %}
+</body>
+</html>

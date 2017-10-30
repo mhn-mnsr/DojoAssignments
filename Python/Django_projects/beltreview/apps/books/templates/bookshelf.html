@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=S, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Welcome, {{ User.first_name }}</h1>
+    <a href="/add_review">Add Book and Review</a>
+    <a href="/">Logout</a>
+    <h3>Your Bookshelf:</h3>
+    <form action="/books" method="post">
+        {% csrf_token %}
+        <table>
+            <thead>
+                <tr>
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Rating</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for books in book %}
+                {% if book.liked_by %}
+                    <td><a href="/books/show">{{ book.title }}</a></td>
+                    <td>{{ book.author }}</td>
+                    <td>{{ book.rating }}</td>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+                <tr>    
+                        
+                    <th>Book</th>
+                    <th>Author</th>
+                    <th>Rating</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <h3>Other Books:</h3>
+                    {% else %}
+                    {% if not book.liked_by %}
+                        <td><a href="/books/show">{{ book.title }}</a></td>
+                        <td>{{ book.author }}</td>
+                        <td>{{ book.rating }}</td>
+                    {% endif %}
+                {% endif%}
+            {% endfor%}
+            </tbody>
+        </table>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Edit User: {{ user.first_name }} {{ user.id }} </h1>
+    <form action="{% url 'users_app:edit_user_info' user.id %}" method="POST">
+        {% csrf_token %}
+        Email: <input type="email" name="email" value="{{ user.email }}">
+        First name:<input type="text" name="first_name"value="{{ user.first_name }}">
+        Last name: <input type="text" name="last_name" value="{{ user.last_name }}">
+        User Level: <select name="is_admin">
+            <option value="True">Admin</option>
+            <option value="False">Normal</option>
+            </select>
+            <input type="submit">
+            <a href="/dashboard/admin">Save</a>
+    </form>
+</body>
+</html>
