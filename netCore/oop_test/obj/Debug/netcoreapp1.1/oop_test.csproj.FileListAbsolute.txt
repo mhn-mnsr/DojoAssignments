@@ -1,0 +1,8 @@
+/Users/maheen/DojoAssignments/netCore/oop_test/bin/Debug/netcoreapp1.1/oop_test.deps.json
+/Users/maheen/DojoAssignments/netCore/oop_test/bin/Debug/netcoreapp1.1/oop_test.runtimeconfig.json
+/Users/maheen/DojoAssignments/netCore/oop_test/bin/Debug/netcoreapp1.1/oop_test.runtimeconfig.dev.json
+/Users/maheen/DojoAssignments/netCore/oop_test/bin/Debug/netcoreapp1.1/oop_test.dll
+/Users/maheen/DojoAssignments/netCore/oop_test/bin/Debug/netcoreapp1.1/oop_test.pdb
+/Users/maheen/DojoAssignments/netCore/oop_test/obj/Debug/netcoreapp1.1/oop_test.AssemblyInfo.cs
+/Users/maheen/DojoAssignments/netCore/oop_test/obj/Debug/netcoreapp1.1/oop_test.dll
+/Users/maheen/DojoAssignments/netCore/oop_test/obj/Debug/netcoreapp1.1/oop_test.pdb

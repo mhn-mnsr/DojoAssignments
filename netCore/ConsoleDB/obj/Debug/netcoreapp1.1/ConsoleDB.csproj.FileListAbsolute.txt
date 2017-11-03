@@ -1,0 +1,16 @@
+/Users/maheen/DojoAssignments/ConsoleDB/bin/Debug/netcoreapp1.1/ConsoleDB.deps.json
+/Users/maheen/DojoAssignments/ConsoleDB/bin/Debug/netcoreapp1.1/ConsoleDB.runtimeconfig.json
+/Users/maheen/DojoAssignments/ConsoleDB/bin/Debug/netcoreapp1.1/ConsoleDB.runtimeconfig.dev.json
+/Users/maheen/DojoAssignments/ConsoleDB/obj/Debug/netcoreapp1.1/ConsoleDB.AssemblyInfo.cs
+/Users/maheen/DojoAssignments/ConsoleDB/bin/Debug/netcoreapp1.1/ConsoleDB.dll
+/Users/maheen/DojoAssignments/ConsoleDB/bin/Debug/netcoreapp1.1/ConsoleDB.pdb
+/Users/maheen/DojoAssignments/ConsoleDB/obj/Debug/netcoreapp1.1/ConsoleDB.dll
+/Users/maheen/DojoAssignments/ConsoleDB/obj/Debug/netcoreapp1.1/ConsoleDB.pdb
+/Users/maheen/DojoAssignments/netCore/ConsoleDB/bin/Debug/netcoreapp1.1/ConsoleDB.deps.json
+/Users/maheen/DojoAssignments/netCore/ConsoleDB/bin/Debug/netcoreapp1.1/ConsoleDB.runtimeconfig.json
+/Users/maheen/DojoAssignments/netCore/ConsoleDB/bin/Debug/netcoreapp1.1/ConsoleDB.runtimeconfig.dev.json
+/Users/maheen/DojoAssignments/netCore/ConsoleDB/bin/Debug/netcoreapp1.1/ConsoleDB.dll
+/Users/maheen/DojoAssignments/netCore/ConsoleDB/bin/Debug/netcoreapp1.1/ConsoleDB.pdb
+/Users/maheen/DojoAssignments/netCore/ConsoleDB/obj/Debug/netcoreapp1.1/ConsoleDB.AssemblyInfo.cs
+/Users/maheen/DojoAssignments/netCore/ConsoleDB/obj/Debug/netcoreapp1.1/ConsoleDB.dll
+/Users/maheen/DojoAssignments/netCore/ConsoleDB/obj/Debug/netcoreapp1.1/ConsoleDB.pdb

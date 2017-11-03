@@ -1,0 +1,8 @@
+/Users/maheen/DojoAssignments/netCore/fundamentals_i/bin/Debug/netcoreapp1.1/fundamentals_i.deps.json
+/Users/maheen/DojoAssignments/netCore/fundamentals_i/bin/Debug/netcoreapp1.1/fundamentals_i.runtimeconfig.json
+/Users/maheen/DojoAssignments/netCore/fundamentals_i/bin/Debug/netcoreapp1.1/fundamentals_i.runtimeconfig.dev.json
+/Users/maheen/DojoAssignments/netCore/fundamentals_i/obj/Debug/netcoreapp1.1/fundamentals_i.AssemblyInfo.cs
+/Users/maheen/DojoAssignments/netCore/fundamentals_i/bin/Debug/netcoreapp1.1/fundamentals_i.dll
+/Users/maheen/DojoAssignments/netCore/fundamentals_i/bin/Debug/netcoreapp1.1/fundamentals_i.pdb
+/Users/maheen/DojoAssignments/netCore/fundamentals_i/obj/Debug/netcoreapp1.1/fundamentals_i.dll
+/Users/maheen/DojoAssignments/netCore/fundamentals_i/obj/Debug/netcoreapp1.1/fundamentals_i.pdb

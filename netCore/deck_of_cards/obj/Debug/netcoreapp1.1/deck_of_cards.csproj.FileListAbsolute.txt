@@ -1,0 +1,8 @@
+/Users/maheen/DojoAssignments/netCore/deck_of_cards/bin/Debug/netcoreapp1.1/deck_of_cards.deps.json
+/Users/maheen/DojoAssignments/netCore/deck_of_cards/bin/Debug/netcoreapp1.1/deck_of_cards.runtimeconfig.json
+/Users/maheen/DojoAssignments/netCore/deck_of_cards/bin/Debug/netcoreapp1.1/deck_of_cards.runtimeconfig.dev.json
+/Users/maheen/DojoAssignments/netCore/deck_of_cards/bin/Debug/netcoreapp1.1/deck_of_cards.dll
+/Users/maheen/DojoAssignments/netCore/deck_of_cards/bin/Debug/netcoreapp1.1/deck_of_cards.pdb
+/Users/maheen/DojoAssignments/netCore/deck_of_cards/obj/Debug/netcoreapp1.1/deck_of_cards.AssemblyInfo.cs
+/Users/maheen/DojoAssignments/netCore/deck_of_cards/obj/Debug/netcoreapp1.1/deck_of_cards.dll
+/Users/maheen/DojoAssignments/netCore/deck_of_cards/obj/Debug/netcoreapp1.1/deck_of_cards.pdb

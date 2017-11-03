@@ -1,0 +1,8 @@
+/Users/maheen/DojoAssignments/netCore/boxing_unboxing/bin/Debug/netcoreapp1.1/boxing_unboxing.deps.json
+/Users/maheen/DojoAssignments/netCore/boxing_unboxing/bin/Debug/netcoreapp1.1/boxing_unboxing.runtimeconfig.json
+/Users/maheen/DojoAssignments/netCore/boxing_unboxing/bin/Debug/netcoreapp1.1/boxing_unboxing.runtimeconfig.dev.json
+/Users/maheen/DojoAssignments/netCore/boxing_unboxing/bin/Debug/netcoreapp1.1/boxing_unboxing.dll
+/Users/maheen/DojoAssignments/netCore/boxing_unboxing/bin/Debug/netcoreapp1.1/boxing_unboxing.pdb
+/Users/maheen/DojoAssignments/netCore/boxing_unboxing/obj/Debug/netcoreapp1.1/boxing_unboxing.AssemblyInfo.cs
+/Users/maheen/DojoAssignments/netCore/boxing_unboxing/obj/Debug/netcoreapp1.1/boxing_unboxing.dll
+/Users/maheen/DojoAssignments/netCore/boxing_unboxing/obj/Debug/netcoreapp1.1/boxing_unboxing.pdb

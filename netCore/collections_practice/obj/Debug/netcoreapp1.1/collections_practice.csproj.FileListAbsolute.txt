@@ -1,0 +1,8 @@
+/Users/maheen/DojoAssignments/netCore/collections_practice/bin/Debug/netcoreapp1.1/collections_practice.deps.json
+/Users/maheen/DojoAssignments/netCore/collections_practice/bin/Debug/netcoreapp1.1/collections_practice.runtimeconfig.json
+/Users/maheen/DojoAssignments/netCore/collections_practice/bin/Debug/netcoreapp1.1/collections_practice.runtimeconfig.dev.json
+/Users/maheen/DojoAssignments/netCore/collections_practice/bin/Debug/netcoreapp1.1/collections_practice.dll
+/Users/maheen/DojoAssignments/netCore/collections_practice/bin/Debug/netcoreapp1.1/collections_practice.pdb
+/Users/maheen/DojoAssignments/netCore/collections_practice/obj/Debug/netcoreapp1.1/collections_practice.AssemblyInfo.cs
+/Users/maheen/DojoAssignments/netCore/collections_practice/obj/Debug/netcoreapp1.1/collections_practice.dll
+/Users/maheen/DojoAssignments/netCore/collections_practice/obj/Debug/netcoreapp1.1/collections_practice.pdb
