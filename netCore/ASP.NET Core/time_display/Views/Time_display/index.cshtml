@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    @{
+        
+        <h1>The Current Time</h1>
+        <!-- Convert Date to string thn format -->
+        DateTime CurrentTime = DateTime.Now;
+        DateTime CurrentDate = DateTime.Today;
+        string CurrDate = CurrentDate.ToString("MMM dd, yyyy");
+        string CurrTime = CurrentTime.ToString("T");
+    }
+    <h1>@CurrDate</h1>
+    <h1>@CurrTime</h1>
+    
+</body>
+</html>

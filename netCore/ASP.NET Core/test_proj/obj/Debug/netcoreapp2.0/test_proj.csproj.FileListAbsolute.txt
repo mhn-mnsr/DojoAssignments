@@ -1,0 +1,10 @@
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/test_proj/bin/Debug/netcoreapp2.0/test_proj.deps.json
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/test_proj/bin/Debug/netcoreapp2.0/test_proj.runtimeconfig.json
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/test_proj/bin/Debug/netcoreapp2.0/test_proj.runtimeconfig.dev.json
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/test_proj/bin/Debug/netcoreapp2.0/test_proj.dll
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/test_proj/bin/Debug/netcoreapp2.0/test_proj.pdb
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/test_proj/obj/Debug/netcoreapp2.0/test_proj.csproj.CoreCompileInputs.cache
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/test_proj/obj/Debug/netcoreapp2.0/test_proj.AssemblyInfoInputs.cache
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/test_proj/obj/Debug/netcoreapp2.0/test_proj.AssemblyInfo.cs
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/test_proj/obj/Debug/netcoreapp2.0/test_proj.dll
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/test_proj/obj/Debug/netcoreapp2.0/test_proj.pdb
