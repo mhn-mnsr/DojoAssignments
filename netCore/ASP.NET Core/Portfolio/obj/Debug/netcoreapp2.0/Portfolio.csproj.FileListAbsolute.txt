@@ -1,0 +1,10 @@
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/Portfolio/bin/Debug/netcoreapp2.0/Portfolio.deps.json
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/Portfolio/bin/Debug/netcoreapp2.0/Portfolio.runtimeconfig.json
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/Portfolio/bin/Debug/netcoreapp2.0/Portfolio.runtimeconfig.dev.json
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/Portfolio/bin/Debug/netcoreapp2.0/Portfolio.dll
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/Portfolio/bin/Debug/netcoreapp2.0/Portfolio.pdb
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/Portfolio/obj/Debug/netcoreapp2.0/Portfolio.csproj.CoreCompileInputs.cache
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/Portfolio/obj/Debug/netcoreapp2.0/Portfolio.AssemblyInfoInputs.cache
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/Portfolio/obj/Debug/netcoreapp2.0/Portfolio.AssemblyInfo.cs
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/Portfolio/obj/Debug/netcoreapp2.0/Portfolio.dll
+/Users/maheen/DojoAssignments/netCore/ASP.NET Core/Portfolio/obj/Debug/netcoreapp2.0/Portfolio.pdb
