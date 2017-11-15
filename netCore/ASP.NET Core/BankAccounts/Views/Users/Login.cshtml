@@ -1,0 +1,17 @@
+@model BankAccounts.Models.RegisterViewModel
+
+<h1>Login<a href="/">Not Registered?</a></h1>
+
+@{
+    if (TempData["Error"] != null)
+    {
+        <p>@TempData["Error"]</p>
+    }
+}
+<form asp-controller ="Users" asp-action="loginUser" method="post">
+    <label asp-for="email">Email:</label>
+    <input asp-for="email" name="email">
+    <label asp-for="password">Password:</label>
+    <input asp-for="password" name="password">
+    <input type="submit" value="Login">
+</form>

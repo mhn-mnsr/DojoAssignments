@@ -1,0 +1,33 @@
+@model BankAccounts.Models.Transaction
+<h1>Welcome, @ViewBag.UserInfo.FirstName @ViewBag.UserInfo.LastName</h1>
+<!-- @{
+    if (TempData["Error"] != null)
+    {
+        <p>@TempData["Error"]</p>
+    }
+} -->
+<form action="/Transaction" method="post">
+    <label for="amount">Withdraw(-)/Deposit(+)</label>
+    <input id= "amount" type="number" name="amount">
+    <input type="submit" class="button-primary" value="Submit">
+</form>
+<p>Current Balance: $@ViewBag.UserInfo.Balance</p>
+<table>
+    <thead>
+        <tr>
+            <th>Amount</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @{
+            foreach (var ts in ViewBag.UserInfo.Transactions)
+            {
+                <tr>
+                    <td>$@ts.amount</td>
+                    <td>@ts.CreatedAt.ToString("MMM dd yyyy")</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
