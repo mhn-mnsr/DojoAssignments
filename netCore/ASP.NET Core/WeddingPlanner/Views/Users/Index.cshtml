@@ -1,0 +1,49 @@
+<!-- @{
+    ViewData["Title"] = "Home Page";
+} -->
+@model WeddingPlanner.Models.Wrapper
+@{
+    if(TempData["LoginError"] != null)
+    {
+        <p>@TempData["LoginError"]</p>
+    }
+}
+
+<h1>Register</h1>
+<form asp-controller="Users" asp-action="RegisterUser" method="post">
+    <span asp-validation-for="Register.FirstName"></span>
+    <label asp-for="Register.FirstName"></label>
+    <input asp-for="Register.FirstName">
+
+    <span asp-validation-for="Register.LastName"></span>
+    <label asp-for="Register.LastName"></label>
+    <input asp-for="Register.LastName">
+
+    <span asp-validation-for="Register.RegEmail"></span>
+    <label asp-for="Register.RegEmail"></label>
+    <input asp-for="Register.RegEmail" class="u-full-width">
+
+    <span asp-validation-for="Register.RegPassword"></span>
+    <label asp-for="Register.RegPassword"></label>
+    <input asp-for="Register.RegPassword" class="u-full-width">
+
+    <span asp-validation-for="Register.ConfirmPassword"></span>
+    <label asp-for="Register.ConfirmPassword"></label>
+    <input asp-for="Register.ConfirmPassword" class="u-full-width">
+
+    <input type="submit" value="Register" class="button-primary">
+</form>
+
+<h1>Already Registered?</h1>
+<h1>Sign In</h1>
+<form asp-controller="Users" asp-action="loginUser" method="post">
+    <span asp-validation-for="Login.LoginEmail"></span>
+    <label asp-for="Login.LoginEmail"></label>
+    <input asp-for="Login.LoginEmail" class="u-full-width">
+
+    <span asp-validation-for="Login.LoginPassword"></span>
+    <label asp-for="Login.LoginPassword"></label>
+    <input asp-for="Login.LoginPassword" class="u-full-width">
+    
+    <input type="submit" value="Login" class="button-primary">
+</form>

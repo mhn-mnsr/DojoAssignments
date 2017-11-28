@@ -66,11 +66,12 @@ namespace BankAccounts.Controllers
             return RedirectToAction("DisplayAll");
         }
 
-        // [HttpGet]
-        // [Route("allTransactions")]
-        // public IActionResult allTransactions()
-        // {
-        //     return View("DisplayAll");
-        // }
+        [HttpGet]
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return View("/");
+        }
     }
 }

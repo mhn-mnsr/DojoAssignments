@@ -1,0 +1,66 @@
+@model theWall.Models.WallModels
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Message Wall - Welcome, @ViewBag.User[0]["FirstName"]</h3>
+    <form action="post_message" method="post">
+        <textarea rows="5" cols="70" name="message" class="form-control" placeholder="Post a message!"></textarea>
+        <input class="btn btn-default btn-sm btn-block" type="submit" value="Post a Message">
+    </form>
+    <hr>
+        @if (ViewBag.Errors != null) {
+            @foreach (var error in ViewBag.Errors) {
+                <p>@error</p>
+            }
+        }
+
+        
+            @foreach (var message in ViewBag.AllMessages)
+            {
+                <br>
+                <b class="author">@message["message_author"]</b>
+                <i>@message["created_at"].ToString("ddd, MMM d, yyyy h:m tt")</i>
+                <p class="message">@message["message"] 
+                    
+                <!-- ViewBag.User[].["id"](used to be in place of 1) -->
+                    @if(message["users_id"] == 1)
+                    {
+                        <form action="delete_post/@message["id"]" method="post">
+                            <input class="btn btn-warning btn-xs btn-block" type="submit" value="Delete">
+                            <br>
+                        </form>
+                    }
+                </p>
+
+            
+                @foreach (var comment in ViewBag.AllComments)
+                {
+                    @if(comment["messages_id"] == message["id"])
+                    {
+                        <b class="comment-author">@comment["comment_author"]</b>
+                        <i class="comment-date">@comment["created_at"].ToString("ddd, MMM d, yyyy h:m tt")</i>
+                        <p class="comment">@comment["comment"]</p>
+                    }
+                }
+                    <form action="post_comment/@message["id"]" method="post">
+                        <textarea rows="2" cols="20" name="comment" class="form-control" placeholder="Add a comment"></textarea>
+                        <input class="btn btn-default btn-xs btn-block" type="submit" value="Comment">
+                    </form>
+                    <hr>  
+                
+                    <form action = "post_comment/@message["id"]" method="post">
+                    <textarea rows="2" cols="20" name="comment" class="form-control" placeholder="Add a comment"></textarea>
+                    <input class="btn btn-default btn-xs btn-block" type="submit" value="Comment">
+                    <hr>
+                </form>
+                
+            }
+</body>
+</html>

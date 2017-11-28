@@ -11,6 +11,7 @@ namespace BankAccounts
                 .UseKestrel()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseStartup<Startup>()
+                .UseIISIntegration()
                 .Build();
 
             host.Run();

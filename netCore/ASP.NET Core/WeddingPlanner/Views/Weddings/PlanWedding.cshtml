@@ -1,0 +1,19 @@
+@model WeddingPlanner.Models.WeddingVM
+
+<div asp-validation-summary="All"></div>
+
+<form asp-controller="Weddings" asp-action="CreateWedding" method="post">
+    <label asp-for="Wedder1">Wedder1:</label>
+    <input asp-for="Wedder1">
+    
+    <label asp-for="Wedder2">Wedder2:</label>
+    <input asp-for="Wedder2">
+
+    <label asp-for="Date">Date:</label>
+    <input asp-for="Date" type="date">
+    
+    <label asp-for="Address">Address:</label>
+    <textarea asp-for="Address"></textarea>
+
+    <input type="submit" value="submit">
+</form>

@@ -1,0 +1,51 @@
+@model WeddingPlanner.Models.Wedding
+
+<!-- <form asp-for="Weddings" asp-action="DisplayAll" method="post"> -->
+    <h1>Welcome to the Wedding Planner</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Wedding</th>
+                    <th>Date</th>
+                    <th>Address</th>
+                    <th>Guest</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var ew in @ViewBag.WeddingInfo)
+                {
+                    <tr>
+                        <td><a href="/SingleWedding/@ew.WeddingId">@ew.WedderOne & @ew.WedderTwo</a></td>
+                        <td>@ew.Date</td>
+                        <td>@ew.Address</td>
+                        <td>@ew.Guests.Count</td>
+                        @if(@ViewBag.UserInfo == @ew.UserId)
+                        {
+                            <td><a href="/DeleteWedding/@ew.WeddingId">Delete</a></td>
+                        }
+                        else
+                        {
+                            bool isAttending = false;
+                            @foreach(var user in @ew.Guests)
+                            {
+                                @if(@ViewBag.UserInfo == @user.UserId)
+                                {
+                                    isAttending = true;
+                                }
+                            }
+                            @if(!isAttending)
+                            {
+                                <td><a href="/RSVP/@ew.WeddingId">RSVP</a></td>
+                            }
+                            else
+                            {
+                                <td><a href="/unRSVP/@ew.WeddingId">UnRSVP</a></td>
+                            }
+                        }
+                    </tr>
+                }
+            </tbody>
+        </table>
+    <a href="/PlanWedding">New Wedding</a>
+<!-- </form> -->

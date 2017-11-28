@@ -1,0 +1,20 @@
+/*Write all of your CSS here*/
+.author {
+    font-family: 'Pacifico', cursive;
+    font-size: 18px;
+}
+.message {
+    font-size: 18px;
+}
+
+.comment-author {
+    color: #5b5b5b;
+}
+
+.comment-date {
+    color: #5b5b5b;
+}
+.comment {
+    color: #5b5b5b;
+}
+

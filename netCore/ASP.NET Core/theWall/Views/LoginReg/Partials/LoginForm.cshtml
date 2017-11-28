@@ -1,0 +1,12 @@
+@model theWall.Models.LoginUser
+<h2>Login</h2>
+    <form asp-controller="LoginReg" asp-action="Login" method="post">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-controller"><br>
+        @TempData["EmailError"]<br>
+        <label asp-for="Password"></label>
+        <input asp-for="Password" class="form-controller"><br>
+        @TempData["PasswordError"]<br>
+        <button class="btn btn-success">Login</button>
+    </form>
+

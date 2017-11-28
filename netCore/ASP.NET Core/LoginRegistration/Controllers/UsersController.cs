@@ -52,6 +52,7 @@ namespace LoginRegistration.Controllers
             }
             return RedirectToAction("Index");
         }
+        
 
         [HttpPost]
         [Route("Login")]
