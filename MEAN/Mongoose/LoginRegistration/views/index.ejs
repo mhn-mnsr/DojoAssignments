@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign Up:</h1>
+    <form action="/user/create" method="post">
+    Name: <input type="text" name="name">
+    Email: <input type="email" name="email">
+    Password: <input type="password" name="password">
+    Confirm Password: <input type="password" name="confirm_password">
+    Birthday: <input type="date" name="birthday">
+    <button>Submit</button>
+    </form>
+<% if(typeof(errors) != 'undefined'){ %>
+    <% for (var x in errors) { %>
+        <h3><%= errors[x].message %></h3>
+    <% } %>
+<% } %>
+<form action="/user/login" method="post">
+    Email: <input type="email" name="email">
+    Password: <input type="password" name="password">
+    <button>Login</button>
+</form>
+</body>
+</html>

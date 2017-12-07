@@ -1,0 +1,21 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title | uppercase}}
+  </h1>
+</div>
+<table>
+  <tr>
+    <th>Email</th>
+    <th>Importance</th>
+    <th>Subject</th>
+    <th>content</th>
+  </tr>
+  <tr *ngFor='let objs of dict'>
+    <td> {{ objs.email }}</td>
+    <td *ngIf='objs.important'>High</td>
+    <td *ngIf='!objs.important'>Low</td>
+    <td>{{ objs.subject }}</td>
+    <td>{{ objs.content }}</td>
+  </tr>
+</table>

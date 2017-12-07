@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>The Dojo Message Board</h1>
+    <form action="/message" method="post">
+    Name: <input type="text" name="name">
+    Message: <input type="text" name="message">
+    <input type="submit" value="Post message">
+    </form>
+    <% if(typeof(errors) != 'undefined'){ %>
+        <% for (var x in errors) { %>
+         <h3><%= errors[x].message %></h3>
+        <% } %>
+    <% } %>
+    
+    <% for (var i = 0 ; i < message.length; i++ ) { %>
+        Name: <p><%= message[i].Name %></p>
+        Message: <p><%= message[i].Message %></p>
+        <% for (var j = 0; j<message[i]._comments.length; j++) { %>
+                Name: <p><%= message[i]._comments[j].Name %></p>
+                Comment: <p><%= message[i]._comments[j].Comment %></p>
+        <% } %>
+
+        <form action="/comment/<%= message[i]._id %>" method="post">
+            Name: <input type="text" name="name">
+            Comment: <input type="text" name="comment">
+            <input type="submit" value="Post comment">
+            <input type="hidden" value="<%= message[i]._id %>" name="_id">
+    
+        </form>
+    <% } %>
+
+        
+</body>
+</html>
