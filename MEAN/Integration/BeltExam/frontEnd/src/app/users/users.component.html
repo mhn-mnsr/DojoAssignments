@@ -1,0 +1,14 @@
+<form (Submit) = "onSubmit()">
+  <input type="text"
+  name = "userName"
+  [(ngModel)]='user.name' 
+  #userName = 'ngModel' 
+  required 
+  minlength="2">
+
+  <div *ngIf='userName.errors'>
+    <small *ngIf='userName.errors.required && userName.touched' class="text-danger">Name is required</small>
+    <small *ngIf='userName.errors.minlength && userName.touched' class="text-danger">Name must be atleast 2 characters</small>
+  </div>
+  <button [disabled]='!userName.valid' type="submit">Add User</button>
+</form>

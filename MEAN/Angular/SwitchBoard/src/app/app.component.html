@@ -1,0 +1,12 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="row">
+  <div class ="switch" *ngFor="let button of buttonColor; let idx = index">
+    <button *ngIf="button" [ngClass]="{'on':button}" (click)="switchColor(idx)">ON</button>
+    <button *ngIf="!button" [ngClass]="{'on':button}" (click)="switchColor(idx)">OFF</button>
+  </div>
+</div>

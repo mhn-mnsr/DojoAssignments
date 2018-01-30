@@ -1,0 +1,25 @@
+<table>
+  <tr>
+    <th>Team Name</th>
+    <th>Actions</th>
+  </tr>
+  <tr *ngFor='let player of players'>
+    <td>{{ player.name }}</td>
+    <td>
+      <button [ngClass]="{
+        'btn-outline-success': player[game] != 'playing',
+        'btn-success': player[game] === 'playing'
+      }" class="btn" (click)="changeStatus(player._id, 'playing')">Playing
+      </button>
+      <button [ngClass]="{
+        'btn-outline-danger': player[game] != 'not',
+        'btn-danger': player[game] === 'not'
+      }" class="btn" (click)="changeStatus(player._id, 'not')">Not Playing
+      </button>
+      <button [ngClass]="{
+        'btn-outline-warning': player[game] != 'undecided',
+        'btn-warning': player[game] === 'undecided'
+      }" class="btn" (click)="changeStatus(player._id, 'undecided')">Undecided</button>
+  </td>
+  </tr>
+</table>

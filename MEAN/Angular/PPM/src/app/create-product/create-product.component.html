@@ -1,0 +1,19 @@
+<h1>PPM - Project Product Management</h1>
+<form (submit)="create()" #formData="ngForm">
+  <h1>Edit Product</h1>
+  Title <input type="text"
+  [(ngModel)]="newProducts.title"
+  required
+  name="title"
+  minlength="4">
+  Price <input type="text"
+  [(ngModel)]="newProducts.price"
+  required
+  name="price"
+  minlength="1"
+  #price="ngModel">
+  Image URL <input type="text"
+  [(ngModel)]="newProducts.imgUrl"
+  name="image">
+  <input type="submit" value="Create">
+</form>

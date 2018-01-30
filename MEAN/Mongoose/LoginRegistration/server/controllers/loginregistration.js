@@ -57,29 +57,6 @@ module.exports = {
         }
     )},
 
-    // login: function(req, res){
-    //     RegisterUser.findOne({email: req.body.email}, function(errMess, regUser){
-    //         console.log('This is initial dbUser', regUser)
-    //         if(req.body.email === regUser.email){
-    //             bcrypt.compare(req.body.password, regUser.password)
-    //             .then(function(){
-    //                 req.session.user = regUser._id;
-    //                 console.log(regUser._id);
-    //                 console.log('Logged in. User in session is:', req.session.user);
-    //                 res.redirect('/user/success');
-    //             })
-    //             .catch(errMess)
-    
-    //         }
-    //         else{
-    //             console.log(errMess);
-    //             console.log('Login Failed');
-    //             res.redirect('/');
-    //         }
-    
-    //     })
-    // },
-
     success: function(req, res) {
         RegisterUser.findOne({_id: req.session.user }, function (errors, regUser) {
             console.log(regUser);

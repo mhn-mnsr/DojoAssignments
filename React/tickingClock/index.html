@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script>
+        console.log(React);
+        console.log(ReactDOM);
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script>
+    const container = document.getElementById('root');
+    const paintClock = () => {
+        const time = new Date().toLocaleTimeString();
+        const content = React.createElement('h1', null, `The time is: ${time}`);
+        ReactDOM.render(content, container);
+    }
+
+    paintClock();
+    setInterval(paintClock, 1000);
+    </script>
+</body>
+</html>

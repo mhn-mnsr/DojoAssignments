@@ -1,0 +1,5 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<app-quote-create (createQuotes)="handleCreateQuotes($event)" ></app-quote-create>
+<!-- Add "input" to child app (createquote) -->
+<app-quote-list [quotes]="quotes" (deleteQuotes)="handleDeleteQuotes($event)"></app-quote-list>

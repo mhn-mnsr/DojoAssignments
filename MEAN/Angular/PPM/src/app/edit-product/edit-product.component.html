@@ -1,0 +1,18 @@
+<form (submit)="update()" #formData="ngForm">
+  <h1>Edit Product</h1>
+  Title <input type="text"
+  [(ngModel)]="product.title"
+  required
+  name="title"
+  minlength="4">
+  Price <input type="text"
+  [(ngModel)]="product.price"
+  required
+  name="price"
+  minlength="1"
+  #price="ngModel">
+  Image URL <input type="text"
+  [(ngModel)]="product.imgUrl"
+  name="image">
+  <input type="submit" value="update">
+</form>

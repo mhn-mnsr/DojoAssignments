@@ -1,0 +1,65 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+  <div class="row">
+    <p *ngIf='people'>Thank you for signing up, {{users[users.length-1].FirstName}}</p>
+  </div>
+  <form (submit)="submit()">
+    <div class="sideerror" *ngIf="FirstName.errors">
+      <p class = "text-danger" *ngIf="FirstName.errors.required && FirstName.touched">First name is required</p>
+    </div>
+    *First Name <input type="text" 
+    name="FirstName" 
+    required 
+    minlength="2" 
+    maxlength="10" 
+    [(ngModel)]='user.FirstName' 
+    #FirstName="ngModel">
+
+    <div class="sideerror" *ngIf="LastName.errors">
+      <p class = "text-danger" *ngIf="LastName.errors.required && LastName.touched">Last name is required</p>
+    </div>
+    *Last Name <input type="text" 
+    name="LastName" 
+    [(ngModel)]='user.LastName' 
+    required minlength="2" 
+    maxlength="10" 
+    #LastName="ngModel">
+
+    <div class="sideerror" *ngIf="Email.errors">
+      <p class = "text-danger" *ngIf="Email.errors.required && Email.touched">Email is required</p>
+    </div>
+    *Email <input type="text" 
+    name="Email" [(ngModel)]='user.Email' 
+    required 
+    minlength="2" 
+    maxlength="50" 
+    #Email="ngModel">
+
+    <div class="sideerror" *ngIf="Password.errors">
+      <p class = "text-danger" *ngIf="Password.errors.required && Password.touched">Password is required</p>
+    </div>
+    *Password <input type="password" 
+    name="Password" 
+    [(ngModel)]='user.Password' 
+    required 
+    minlength="2" 
+    maxlength="10" 
+    #Password="ngModel">
+
+    <div class="sideerror" *ngIf='user.Password !== user.ConfirmPassword'>
+      <p class="text-danger" *ngIf="ConfirmPassword.touched">Passwords must match!</p>
+    </div>
+    *Password Confirmation <input type="password" 
+    name="ConfirmPassword"
+    required
+    [(ngModel)]='user.ConfirmPassword'
+    #ConfirmPassword="ngModel">
+   
+    <!-- <button *ngIf='FirstName.errors || LastName.errors || Email.errors || Password.errors || user.ConfirmPassword === user.Password'>Submit</button> -->
+    <button type="submit" *ngIf='!FirstName.errors && !LastName.errors && !Email.errors && !Password.errors && user.ConfirmPassword === user.Password'>Submit</button>
+
+  </form>
+</div>
